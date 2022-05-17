@@ -4,9 +4,9 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
-import android.support.annotation.FloatRange
-import android.support.annotation.IntRange
-import android.support.v7.widget.RecyclerView
+import androidx.annotation.FloatRange
+import androidx.annotation.IntRange
+import androidx.recyclerview.widget.RecyclerView
 import android.view.MotionEvent
 import android.view.VelocityTracker
 import android.view.View
@@ -1036,7 +1036,8 @@ class StackCardLayoutManager : RecyclerView.LayoutManager {
     }
 
     override fun generateDefaultLayoutParams(): RecyclerView.LayoutParams {
-        return RecyclerView.LayoutParams(RecyclerView.LayoutParams.WRAP_CONTENT, RecyclerView.LayoutParams.WRAP_CONTENT)
+        return RecyclerView.LayoutParams(
+            RecyclerView.LayoutParams.WRAP_CONTENT, RecyclerView.LayoutParams.WRAP_CONTENT)
     }
 
     /**
